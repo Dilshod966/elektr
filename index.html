@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosh Sahifa</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="getPostsRequest()">
+    <div class="blur" id="reg">
+        <div class="forma" id="reg1">
+            <p>Ro'yhatdan O'tish</p>
+            <label for="new_ism">Ismingiz:</label>
+            <input type="text" placeholder="Ismingiz" id="new_ism">
+            <label for="new_fam">Familiya:</label>
+            <input type="text" placeholder="Familiyangiz" id="new_fam">
+            <label for="new_parol">Parol:</label>
+            <input type="password" placeholder="Parol o'ylab toping" id="new_parol">
+            <label></label>
+            <div>
+                <label for="we">Manzilni tanlang:</label>
+                <select name="xd" id="we">
+                    <option value="Urganch shahri">Urganch shahri</option>
+                    <option value="Bog'ot tumani">Bog'ot tumani</option>
+                    <option value="Gurlan tumani">Gurlan tumani</option>
+                    <option value="Qo'shko'pir tumani">Qo'shko'pir tumani</option>
+                    <option value="Shovot tumani">Shovot tumani</option>
+                    <option value="Xazorasp tumani">Xazorasp tumani</option>
+                    <option value="Xonqa tumani">Xonqa tumani</option>
+                    <option value="Yangiariq tumani">Yangiariq tumani</option>
+                    <option value="Yangibozor tumani">Yangibozor tumani</option>
+                    <option value="Urganch tumani">Urganch tumani</option>
+                </select>
+            </div>
+            <label for="new_tel">Tel Raqam:</label>
+            <input type="tel" placeholder="Tel raqamingiz" id="new_tel">
+            <label for="new_hisob">Hisob Raqam:</label>
+            <input type="text" placeholder="Hisob raqamingiz" id="new_hisob">
+            <label for="new_balans">Balans:</label>
+            <input type="text" placeholder="Balans" id="new_balans">
+            <label></label>
+            <div class="mid">
+                <div>
+                    <input type="radio" name="res" value="Turar joy" id="t1">
+                    <label for="t1">Turar joy</label>
+                </div>
+            <div>
+                <input type="radio" name="res" value="Noturar joy" id="t2">
+            <label for="t2">Noturar joy</label>
+            </div>
+            </div>
+            <label></label>
+            <div class="xd3">
+                <button onclick="reg2()">Ro'yhatdan O'tish</button> 
+                <label for="">Siz Ro'yhatdan O'tganmisiz ? <span onclick="regis()">Kirish</span></label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="blur" id = "login">
+        <div class="forma" id="login1">
+            <p>Kirish</p>
+            <label for="ism">Ismingiz:</label>
+            <input type="text" placeholder="Ismingizni kiriting" id="ism">
+            <label for="parol">Parol:</label>
+            <input type="password" placeholder="Parol kiriting" id="parol">
+            <label for=""></label>
+            <div class="xd3">
+                <button onclick="kir()">Kirish</button> 
+                <label for="">Ro'yhatdan O'tmaganmisiz ? <span onclick="login()">Ro'yhatdan O'tish</span></label>
+            </div>
+        </div>
+    </div>
+    <nav>
+        
+        <div class="bars"><img src="./images/logo.png" alt="logo"></div>
+        <div class="bars"><p id="name"></p></div>
+        <div class="bars"><a href="./index.html"><button>Log out</button></a></div>
+        
+    </nav>
+
+    
+
+
+
+
+    <main>
+        <div class="wid">
+            <div class="left">
+                <p class="wir">Ro'yhatdan O'tganlar:</p>
+                <div class="list_reg">
+
+                </div>
+             </div>
+     
+     
+     
+             <div class="right">
+                 <p class="heyt">Ism:</p>
+                 <p class="heyt">Familiya:</p>
+                 <p class="heyt">Manzil:</p>
+                 <p class="heyt">Tel:</p>
+                 <p class="heyt">Hisob Raqami:</p>
+                 <p class="heyt">Balans:</p>
+                 <p class="heyt">Istemolchi Turi:</p>
+             </div>
+             <div class="global"><img src="./images/Global-Networking-Transparent-PNG.png" alt=""></div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+    <div class="wadow"></div>
+    <footer>
+        <p>ELEKTR ABANENTLARI</p>
+        <p>© Design by Dilshodbek</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
